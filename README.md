@@ -29,3 +29,8 @@ git clone https://github.com/BrianProcopio/LazyVim.git ~/.config/nvim
 
 - Once installed `:Copilot auth` to authorize the GitHub Copilot plugin.
 - Be sure to run `:checkhealth` and resolve any errors
+
+## Additional Plugins
+
+- [ChatGPT](https://github.com/jackMort/ChatGPT.nvim) assumes you are using 1Password to store your OpenAI API Key
+- Disable this plugin if you don't want to use ChatGPT by deleting the custom plugin and running `:Lazy`
