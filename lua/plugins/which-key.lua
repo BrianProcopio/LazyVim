@@ -3,6 +3,7 @@ return {
   opts = function(_, opts)
     local LazyVim = require("lazyvim.util")
 
+    -- ChatGPT Keybindings for which-key
     if LazyVim.has("ChatGPT.nvim") then
       opts.defaults["<leader>p"] = {
         name = "ChatGPT [p]rompt",
@@ -22,6 +23,7 @@ return {
       }
     end
 
+    -- Session Manager Keybindings for which-key
     if LazyVim.has("neovim-session-manager") then
       opts.defaults["<leader>m"] = {
         name = "Session [m]anager",
