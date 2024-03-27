@@ -3,7 +3,15 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        intelephense = {},
+        intelephense = {
+          -- settings = {
+          --   intelephense = {
+          --     files = {
+          --       maxSize = 1000000,
+          --     },
+          --   },
+          -- },
+        },
       },
     },
   },
