@@ -34,3 +34,5 @@ git clone https://github.com/BrianProcopio/LazyVim.git ~/.config/nvim
 
 - [ChatGPT](https://github.com/jackMort/ChatGPT.nvim) assumes you are using 1Password to store your OpenAI API Key
 - Disable this plugin if you don't want to use ChatGPT by deleting the custom plugin and running `:Lazy`
+
+<!-- markdownlint-configure-file { "MD013": false } -->
