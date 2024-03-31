@@ -33,6 +33,14 @@ git clone https://github.com/BrianProcopio/LazyVim.git ~/.config/nvim
 ## Additional Plugins
 
 - [ChatGPT](https://github.com/jackMort/ChatGPT.nvim) assumes you are using 1Password to store your OpenAI API Key
-- Disable this plugin if you don't want to use ChatGPT by deleting the custom plugin and running `:Lazy`
+  - Disable this plugin if you don't want to use ChatGPT by deleting the custom plugin and running `:Lazy`
+  - `<leader>pc` will open a chatGPT prompt inside Neovim to interact with
+- [telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) is an extension for telescope to browse your file system in Neovim
+  - `<leader>sB` will open telescope as a file browser
+  - `<C-h>` to toggle hidden files inside telescope
+- [neovim-session-manager](https://github.com/shatur/neovim-session-manager.nvim) to manage project level Neovim sessions automatically
+  - `<leader>ml` to list saved sessions after opening
+- [undotree](https://github.com/jiaoshijie/undotree) to visualize the current files history tree
+  - `<leader>gu` to open the undo tree
 
 <!-- markdownlint-configure-file { "MD013": false } -->

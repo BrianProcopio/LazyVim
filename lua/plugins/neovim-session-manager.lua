@@ -1,3 +1,5 @@
 return {
-  "shatur/neovim-session-manager",
+  {
+    "shatur/neovim-session-manager",
+  },
 }

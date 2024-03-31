@@ -1,9 +1,11 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  opts = function(_, opts)
-    vim.list_extend(opts.ensure_installed, {
-      "php",
-    })
-    opts.auto_install = true
-  end,
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
+        "php",
+      })
+      opts.auto_install = true
+    end,
+  },
 }
