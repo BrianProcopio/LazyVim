@@ -10,8 +10,7 @@ return {
       }
 
       opts.mapping = cmp.mapping.preset.insert(vim.tbl_deep_extend("force", opts.mapping, {
-        -- My config
-        ["<CR>"] = cmp.mapping.confirm({ select = false }), -- 'select = false' to only confirm explicitly selected item
+        ["<CR>"] = cmp.mapping.confirm({ select = false }),
       }))
     end,
   },
