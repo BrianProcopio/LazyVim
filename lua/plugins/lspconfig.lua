@@ -4,13 +4,19 @@ return {
     opts = {
       servers = {
         intelephense = {
-          -- settings = {
-          --   intelephense = {
-          --     files = {
-          --       maxSize = 1000000,
-          --     },
-          --   },
-          -- },
+          settings = {
+            intelephense = {
+              format = {
+                enable = true,
+              },
+              diagnostic = {
+                enabled = true,
+              },
+              --     files = {
+              --       maxSize = 1000000,
+              --     },
+            },
+          },
         },
       },
     },
