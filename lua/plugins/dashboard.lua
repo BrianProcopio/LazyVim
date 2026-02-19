@@ -1,7 +1,9 @@
 return {
+  -- Disable snacks.nvim's built-in dashboard so dashboard-nvim can take over
+  { "folke/snacks.nvim", opts = { dashboard = { enabled = false } } },
   {
     "nvimdev/dashboard-nvim",
-    event = "VimEnter",
+    lazy = false, -- must not be lazy-loaded (handles stdin)
     opts = function()
       local logo = [[
    ▄▄▄▄    ██▀███  ▓█████ ▄▄▄       ██ ▄█▀     ██████ ▄▄▄█████▓ █    ██   █████▒ █████▒
@@ -29,7 +31,7 @@ return {
           header = vim.split(logo, "\n"),
           -- stylua: ignore
           center = {
-            { action = require('lazyvim.util').telescope("files"),                                    desc = " Find file",       icon = " ", key = "f" },
+            { action = "Telescope find_files",                                     desc = " Find file",       icon = " ", key = "f" },
             { action = "ene | startinsert",                                        desc = " New file",        icon = " ", key = "n" },
             { action = "Telescope oldfiles",                                       desc = " Recent files",    icon = " ", key = "r" },
             { action = "Telescope live_grep",                                      desc = " Find text",       icon = " ", key = "g" },
