@@ -35,7 +35,7 @@ return {
             { action = "ene | startinsert",                                        desc = " New file",        icon = " ", key = "n" },
             { action = "Telescope oldfiles",                                       desc = " Recent files",    icon = " ", key = "r" },
             { action = "Telescope live_grep",                                      desc = " Find text",       icon = " ", key = "g" },
-            { action = [[lua require("lazyvim.util").telescope.config_files()()]], desc = " Config",          icon = " ", key = "c" },
+            { action = [[lua require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })]], desc = " Config",          icon = " ", key = "c" },
             { action = "SessionManager load_last_session",                         desc = " Restore Session", icon = " ", key = "s" },
             { action = "SessionManager load_session",                              desc = " Browse Sessions", icon = " ", key = "p" },
             { action = "LazyExtras",                                               desc = " Lazy Extras",     icon = " ", key = "x" },
